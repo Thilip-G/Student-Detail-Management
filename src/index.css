@@ -1,0 +1,28 @@
+.glass-card {
+    position: relative;
+    background-image: url("../src/assets/card-img1.avif");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .glass-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(141, 135, 135, 0.5);
+    backdrop-filter: blur(2px);
+    z-index: 1;
+  }
+
+  .glass-card > * {
+    position: relative;
+    z-index: 2;
+  }
+  
+
+  body{
+    background-image: url("../src/assets/bg-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
